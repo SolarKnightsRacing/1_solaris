@@ -3,14 +3,17 @@ log: Solaris
 index: 3
 title: Decided On Subsystems
 status: accepted
-date: 2025-03-18T23:21:00-05
-decision_makers: [President, Technical_Director]
-consulted: []
-informed: [Everyone]
+date: 2025-03-31T14:17:00-05
+decision_makers:
+  - President
+  - Technical_Director
+consulted: 
+informed:
+  - Everyone
 ---
 ## Context and Problem Statement
 
-Each component used and action taken to build the vehicle will be categorized into a subsystem in order to divide the work and responsibility amongst the team.
+Each component used and action taken to build the vehicle will be categorized into a subsystem in order to divide the work and responsibility amongst the team. Each subsystem will have a Subsystem Lead that ensures the success of the subsystem. 
 Which subsystems will we use?
 ## Decision Drivers
 
