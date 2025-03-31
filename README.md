@@ -1,7 +1,7 @@
 # Solaris
 ![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
 
-This repository documents and organizes information on vehicle design and engineering efforts for Solar Knights Racing's {#th} vehicle, {vehicle name}.
+This repository documents and organizes information on vehicle design and engineering efforts for Solar Knights Racing's 1st vehicle, Solaris.
 
 ## License
 
