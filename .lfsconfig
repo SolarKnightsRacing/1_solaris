@@ -1,0 +1,4 @@
+# Basic endpoint configuration
+[lfs]
+    # Set the URL for the LFS server
+    url = https://solarknightsracing:3l7Rh7GMuxOTaL7ISPt3RcmQMjZO7C5HHrmYf5XK5CQ3l3j6KrE7JQQJ99BCACAAAAAAAAAAAAASAZDO18uz@dev.azure.com/solarknightsracing/SKR-Core/_git/LFS-Storage.git/info/lfs
