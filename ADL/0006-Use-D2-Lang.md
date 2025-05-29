@@ -72,7 +72,7 @@ Chosen option: D2 lang
   led -> ground
   ground -> battery
   ```
-  [Example D2 Diagram](assets/D2lang-Diagram-Example.svg)
+  ![Example D2 Diagram](assets/D2lang-Diagram-Example.svg)
 
   * Good, because it is very flexable.
   * Good, because it was built from the ground up with the mistakes of Mermaid, Graphviz and similar tools in mind.
