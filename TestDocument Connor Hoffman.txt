@@ -1,4 +1,0 @@
-This is a test document for Connor Hoffman
-
-
-Git LFS and Git tutorial
