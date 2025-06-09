@@ -12,13 +12,14 @@ tags: []
 
 ## Context and Problem Statement
 
-We must standardize part versioning in order to prevent 
+We must standardize part versioning in order to prevent breaking assemblies.
 
 ## Decision Drivers
 
-* Ease of creation: Creating new part numbers, or typing out a part number in general, should be easy and quick.
-* Readability: One should be able to tell what part it is refrencing. 
-* Uniqueness: Each part number should be unique from any other part that will be created withing the club.
+* Ease of creation: Creating new version numbers should be easy and quick.
+* Readability: One should be able to gether usable information from a version number. 
+* Uniqueness: Each version number should be unique.
+* Chronological: The version numbers should be in chronological order when sorted alphabetacally.
 
 ## Considered Options
 
@@ -29,75 +30,48 @@ We must standardize part versioning in order to prevent
 
 ## Decision Outcome
 
-Chosen option: "Semantic Versioning", because its the only option right now. Omar and I spent a while trying to determine the best schema and this is what we landed on.
+Chosen option: "Semantic Versioning", because It allows version numbers to provide critical information about revisions.
 
 ### Consequences
 
-* Good, because each part number will be unique. (216 Million combinations)
-* Good, because it allows for up to 36 parts in an assembly without deviating from the schema
-* Good, because part numbers are still very short
-* Good, because part numbers will self-organize when listed alphabetically
-* Neutral, because it must be paired with some sort of description schema if read out-of-context
-* Neutral, because every part must belong to one, and only one, subsystem. This can be viewed as a good or bad thing depending on if you value the benefits of having distinct responsibilities for each sub-system.
-
-### Confirmation
-
-Part numbering will be used for all official refrences to parts and assemblies.
+* Good, because revisions are classified as compatable or incompatable
+* Good, because it is a popular way of tracking versions
+* Good, because PATCH level changes don't need to be updated with any urgency
+* Good, because MINOR level changes won't halt development if they aren't imeadiately updated
 
 ## Pros and Cons of the Options
+### Semantic Versioning
 
-### Sol-El-1234-5
+In short, Semantic Versioning consists of a MAJOR version, a MINOR version and a PATCH version. like the following: `MAJOR.MINOR.PATCH`
 
-* Good, because each part number will be unique. (216 Million combinations)
-* Good, because it allows for up to 36 parts in an assembly without deviating from the schema
-* Good, because part numbers are still very short
-* Good, because part numbers will self-organize when listed alphabetically
-* Neutral, because it must be paired with some sort of description schema if read out-of-context
-* Neutral, because every part must belong to one, and only one, subsystem. This can be viewed as a good or bad thing depending on if you value the benefits of having distinct responsibilities for each sub-system.
+PATCH level changes include those that simply fix existing geometry or make something work the way it was originally intended to.
 
-## More Information
+MINOR level changes include those that make a significant change to the inner functionality of the part but do not change the way the part interacts with others.
 
-### Sol-El-1234-5 (AAA-BB-CDEF-G)
+MAJOR level changes include those that make incompatable changes to the part that require others to adapt to.
 
-AAA -> Vehicle Name abbriviated
-BB  -> Subsystem abbriviated
-C   -> Top Level Assembly Identifier
-D   -> Sub-Assembly Identifier
-E   -> Sub-Sub-Assembly Identifier
-F   -> Sub-Sub-Sub-Assembly Identifier
-G   -> Part Identifier
+This blog post explains semantic versioning and how it streamlines CAD iteration: https://www.cadtrainingonline.com/5-best-practices-for-cad-version-control/#1_Use_Semantic_Versioning_for_Design_Iterations
 
-#### AAA -> Vehicle Name abbriviated
-The vehicle's name abbriviated to 3 characters.
-Ex. Solaris -> Sol
-#### BB -> Subsystem abbriviated
-The subsystem the part belongs to abbriviated to 2 characters.
-Ex. *Ch*assis -> Ch
-Ex. *El*ectrical -> El
-Ex. *Er*gonomics -> Er
-Ex. *V*ehicle *d*ynamics -> Vd
+* Good, because revisions are classified as compatable or incompatable
+* Good, because it is a popular way of tracking versions
+* Good, because PATCH level changes don't need to be updated with any urgency
+* Good, because MINOR level changes won't halt development if they aren't imeadiately updated
 
-#### C -> Top Level Assembly Identifier
-The Top-level assembly the part exists under within the subsystem.
-1, ... , 8, 9, a, b, ... , y, z 
-Ex. The battery might use the 1000 level identifier so "1"
+### Incremental
+Each time a change is made, a singular version number is incremented.
 
-#### D -> Sub-Assembly Identifier
-The Sub-Assembly the part exists under within the Top-Level Assembly.
-1, ... , 8, 9, a, b, ... , y, z 
-Ex. The "pack" might use the 200 level identifier so "2"
+Ex. v1 -> v2 -> v3
 
-#### E -> Sub-Sub-Assembly Identifier
-The Sub-Sub-Assembly the part exists under within the Sub-Assembly.
-1, ... , 8, 9, a, b, ... , y, z 
-Ex. One of the strings might use the 30 level identifier so "3"
+* Good, because it is intuitive
+* Bad, because numbers becomes unweildy when part changes are frequent.
+* Bad, because the new version could be entirely different or have one insignificant adjustment.
+* Bad, because parts must be manually updated in assemblies for every change.
 
-#### F -> Sub-Sub-Sub-Assembly Identifier
-The Sub-Sub-Sub-Assembly the part exists under within the Sub-Sub-Assembly.
-1, ... , 8, 9, a, b, ... , y, z 
-Ex. One of the modules might use the 4 level identifier so "4"
+### Branching Method
+This method relies on different git branches that use the same part name. The version of the part is tied to the git branch it is on.
+* Good, because solidworks would automatically use whatever part is currently checked out in the working directory.
+* Neutral, because part versions are implied rather than explicit.
+* Bad, because it is fragile
 
-#### G -> Part Identifier
-The identifier for the part. "0" is a sentinel value that means that the part is an assembly
-0, 1, ... , 8, 9, a, b, ... , y, z 
-Ex. One of the cells might use the identifier 5
+### None
+* Bad, because bad
