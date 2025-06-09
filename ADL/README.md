@@ -14,7 +14,7 @@ The first thing in the document must be the following YAML front-matter/metadata
 log: {Architecture Decision Log Name. Most likely car name}
 index: 0
 title: {short title, representative of solved problem and found solution}
-status: {proposed | rejected | accepted | deprecated | ... | superseded by [ADR-0123](ADR-0123)}
+status: { drafted | proposed | rejected | accepted | deprecated | ... | superseded by [ADR-0123](ADR-0123)}
 date: {YYYY-MM-DD when the decision was last updated}
 decision_makers: {list everyone with final say in the decision e.g.[Person1, Person2, ...]}
 consulted: {list everyone whose opinions are sought (typically subject-matter experts); and with whom there is a two-way communication}
