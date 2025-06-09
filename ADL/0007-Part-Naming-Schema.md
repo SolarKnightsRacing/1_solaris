@@ -2,8 +2,8 @@
 log: solaris
 index: 7
 title: Part Naming Schema
-status: draft
-date: 2025-06-09T01:07:00-05
+status: proposed
+date: 2025-06-09T12:15:00-05
 decision_makers: [Technical_Director, Chassis_Lead, Electrical_Lead, Ergonomics_Lead, Vehicle_Dynamics_Lead]
 consulted: [Technical_Director, Chassis_Lead, Electrical_Lead, Ergonomics_Lead, Vehicle_Dynamics_Lead]
 informed: [Everyone]
@@ -12,89 +12,49 @@ tags: []
 
 ## Context and Problem Statement
 
-We must standardize part naming in order to ensure uniformity in regards to refrencing parts. These part numbers will be used in file names, git operations, budgeting spreadsheets or just in conversation.
+We must standardize part naming.
 
 ## Decision Drivers
 
-* Ease of creation: Creating new part numbers, or typing out a part number in general, should be easy and quick.
+* Ease of creation: Creating new part names, or typing out a part name in general, should be easy and quick.
 * Readability: One should be able to tell what part it is refrencing. 
-* Uniqueness: Each part number should be unique from any other part that will be created withing the club.
+* Uniqueness: Each part name should be unique from any other part that will be created within the club.
 
 ## Considered Options
 
-* Sol-El-1234-5
+* {Part Number}-{Part Description}-{Part Version}
 
 ## Decision Outcome
 
-Chosen option: "Sol-El-1234-5", because its the only option right now. Omar and I spent a while trying to determine the best schema and this is what we landed on.
+Chosen option: "{Part Number}-{Part Description}-{Part Version}", because it satifies the readability and uniqueness drivers and it is the only option right now.
 
 ### Consequences
 
-* Good, because each part number will be unique. (216 Million combinations)
-* Good, because it allows for up to 36 parts in an assembly without deviating from the schema
-* Good, because part numbers are still very short
-* Good, because part numbers will self-organize when listed alphabetically
-* Neutral, because it must be paired with some sort of description schema if read out-of-context
-* Neutral, because every part must belong to one, and only one, subsystem. This can be viewed as a good or bad thing depending on if you value the benefits of having distinct responsibilities for each sub-system.
+* Good, because each part name will be unique as long as part numbers are unique.
+* Good, because part names will self-organize when listed alphabetically
+* Bad, because part names will be long
 
 ### Confirmation
 
-Part numbering will be used for all official refrences to parts and assemblies.
+Part naming will be used for any official refrences to parts or assemblies that require descriptive elements. e.g. CAD filenames.
 
 ## Pros and Cons of the Options
 
-### Sol-El-1234-5
+### {Part Number}-{Abbriviated Part Description. General to Specific}-{Part Version}
 
-* Good, because each part number will be unique. (216 Million combinations)
-* Good, because it allows for up to 36 parts in an assembly without deviating from the schema
-* Good, because part numbers are still very short
-* Good, because part numbers will self-organize when listed alphabetically
-* Neutral, because it must be paired with some sort of description schema if read out-of-context
-* Neutral, because every part must belong to one, and only one, subsystem. This can be viewed as a good or bad thing depending on if you value the benefits of having distinct responsibilities for each sub-system.
+This naming schema will use the Part Number and Part Version along with a description of the part to create a filename that is descriptive, unique, and relatively easy to create.
 
-## More Information
+The Abbriviated Part Description will be a list of words that describe the location and functionality of a part from most general category to most specific category. This description should sound natural when read from RIGHT to left.
 
-### Sol-El-1234-5 (AAA-BB-CDEF-G)
+General catagories:
+```
+assembly --------> ASM
+weldment --------> WLD
+electronics pcb -> PCB
+machined part ---> PRT
+chassis tab -----> TAB
+```
 
-AAA -> Vehicle Name abbriviated
-BB  -> Subsystem abbriviated
-C   -> Top Level Assembly Identifier
-D   -> Sub-Assembly Identifier
-E   -> Sub-Sub-Assembly Identifier
-F   -> Sub-Sub-Sub-Assembly Identifier
-G   -> Part Identifier
-
-#### AAA -> Vehicle Name abbriviated
-The vehicle's name abbriviated to 3 characters.
-Ex. Solaris -> Sol
-#### BB -> Subsystem abbriviated
-The subsystem the part belongs to abbriviated to 2 characters.
-Ex. *Ch*assis -> Ch
-Ex. *El*ectrical -> El
-Ex. *Er*gonomics -> Er
-Ex. *V*ehicle *d*ynamics -> Vd
-
-#### C -> Top Level Assembly Identifier
-The Top-level assembly the part exists under within the subsystem.
-1, ... , 8, 9, a, b, ... , y, z 
-Ex. The battery might use the 1000 level identifier so "1"
-
-#### D -> Sub-Assembly Identifier
-The Sub-Assembly the part exists under within the Top-Level Assembly.
-1, ... , 8, 9, a, b, ... , y, z 
-Ex. The "pack" might use the 200 level identifier so "2"
-
-#### E -> Sub-Sub-Assembly Identifier
-The Sub-Sub-Assembly the part exists under within the Sub-Assembly.
-1, ... , 8, 9, a, b, ... , y, z 
-Ex. One of the strings might use the 30 level identifier so "3"
-
-#### F -> Sub-Sub-Sub-Assembly Identifier
-The Sub-Sub-Sub-Assembly the part exists under within the Sub-Sub-Assembly.
-1, ... , 8, 9, a, b, ... , y, z 
-Ex. One of the modules might use the 4 level identifier so "4"
-
-#### G -> Part Identifier
-The identifier for the part. "0" is a sentinel value that means that the part is an assembly
-0, 1, ... , 8, 9, a, b, ... , y, z 
-Ex. One of the cells might use the identifier 5
+* Good, because each part name will be unique as long as part numbers are unique.
+* Good, because part names will self-organize when listed alphabetically
+* Bad, because part names will be long
