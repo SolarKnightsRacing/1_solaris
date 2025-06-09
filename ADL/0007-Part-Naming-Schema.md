@@ -17,7 +17,7 @@ We must standardize part naming.
 ## Decision Drivers
 
 * Ease of creation: Creating new part names, or typing out a part name in general, should be easy and quick.
-* Readability: One should be able to tell what part it is refrencing. 
+* Readability: One should be able to tell what part it is referencing. 
 * Uniqueness: Each part name should be unique from any other part that will be created within the club.
 
 ## Considered Options
@@ -26,7 +26,7 @@ We must standardize part naming.
 
 ## Decision Outcome
 
-Chosen option: "{Part Number}-{Part Description}-{Part Version}", because it satifies the readability and uniqueness drivers and it is the only option right now.
+Chosen option: "{Part Number}-{Part Description}-{Part Version}", because it satisfies the readability and uniqueness drivers, and it is the only option right now.
 
 ### Consequences
 
@@ -36,17 +36,17 @@ Chosen option: "{Part Number}-{Part Description}-{Part Version}", because it sat
 
 ### Confirmation
 
-Part naming will be used for any official refrences to parts or assemblies that require descriptive elements. e.g. CAD filenames.
+Part naming will be used for any official references to parts or assemblies that require descriptive elements. e.g. CAD filenames.
 
 ## Pros and Cons of the Options
 
-### {Part Number}-{Abbriviated Part Description. General to Specific}-{Part Version}
+### {Part Number}-{Abbreviated Part Description}-{Part Version}
 
 This naming schema will use the Part Number and Part Version along with a description of the part to create a filename that is descriptive, unique, and relatively easy to create.
 
-The Abbriviated Part Description will be a list of words that describe the location and functionality of a part from most general category to most specific category. This description should sound natural when read from RIGHT to left.
+The Abbreviated Part Description will be a list of words that describe the location and functionality of a part, from most general category to most specific category. This description should sound natural when read from RIGHT to left.
 
-General catagories:
+General categories:
 ```
 assembly --------> ASM
 weldment --------> WLD
