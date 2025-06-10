@@ -17,9 +17,9 @@ We must standardize part versioning in order to prevent breaking assemblies.
 ## Decision Drivers
 
 * Ease of creation: Creating new version numbers should be easy and quick.
-* Readability: One should be able to gether usable information from a version number. 
+* Readability: One should be able to gather usable information from a version number. 
 * Uniqueness: Each version number should be unique.
-* Chronological: The version numbers should be in chronological order when sorted alphabetacally.
+* Chronological: The version numbers should be in chronological order when sorted alphabetically.
 
 ## Considered Options
 
@@ -34,10 +34,10 @@ Chosen option: "Semantic Versioning", because It allows version numbers to provi
 
 ### Consequences
 
-* Good, because revisions are classified as compatable or incompatable
+* Good, because revisions are classified as compatible or incompatible
 * Good, because it is a popular way of tracking versions
 * Good, because PATCH level changes don't need to be updated with any urgency
-* Good, because MINOR level changes won't halt development if they aren't imeadiately updated
+* Good, because MINOR level changes won't halt development if they aren't immediately updated
 
 ## Pros and Cons of the Options
 ### Semantic Versioning
@@ -48,14 +48,14 @@ PATCH level changes include those that simply fix existing geometry or make some
 
 MINOR level changes include those that make a significant change to the inner functionality of the part but do not change the way the part interacts with others.
 
-MAJOR level changes include those that make incompatable changes to the part that require others to adapt to.
+MAJOR level changes include those that make incompatible changes to the part that require others to adapt to.
 
 This blog post explains semantic versioning and how it streamlines CAD iteration: https://www.cadtrainingonline.com/5-best-practices-for-cad-version-control/#1_Use_Semantic_Versioning_for_Design_Iterations
 
-* Good, because revisions are classified as compatable or incompatable
+* Good, because revisions are classified as compatible or incompatible
 * Good, because it is a popular way of tracking versions
 * Good, because PATCH level changes don't need to be updated with any urgency
-* Good, because MINOR level changes won't halt development if they aren't imeadiately updated
+* Good, because MINOR level changes won't halt development if they aren't immediately updated
 
 ### Incremental
 Each time a change is made, a singular version number is incremented.
@@ -63,13 +63,13 @@ Each time a change is made, a singular version number is incremented.
 Ex. v1 -> v2 -> v3
 
 * Good, because it is intuitive
-* Bad, because numbers becomes unweildy when part changes are frequent.
+* Bad, because numbers becomes unwieldy when part changes are frequent.
 * Bad, because the new version could be entirely different or have one insignificant adjustment.
 * Bad, because parts must be manually updated in assemblies for every change.
 
 ### Branching Method
 This method relies on different git branches that use the same part name. The version of the part is tied to the git branch it is on.
-* Good, because solidworks would automatically use whatever part is currently checked out in the working directory.
+* Good, because SolidWorks would automatically use whatever part is currently checked out in the working directory.
 * Neutral, because part versions are implied rather than explicit.
 * Bad, because it is fragile
 
