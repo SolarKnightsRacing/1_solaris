@@ -1,7 +1,7 @@
 ---
 log: solaris
 index: 7
-title: Part File Naming Schema
+title: Part Naming Schema
 status: proposed
 date: 2025-06-10T11:04:00-05
 decision_makers: [Technical_Director, Chassis_Lead, Electrical_Lead, Ergonomics_Lead, Vehicle_Dynamics_Lead]
