@@ -2,7 +2,7 @@
 log: solaris
 index: 6
 title: Part Versioning Schema
-status: draft
+status: proposed
 date: 2025-06-09T01:09:00-05
 decision_makers: [Technical_Director, Chassis_Lead, Electrical_Lead, Ergonomics_Lead, Vehicle_Dynamics_Lead]
 consulted: [Technical_Director, Chassis_Lead, Electrical_Lead, Ergonomics_Lead, Vehicle_Dynamics_Lead]
