@@ -14,7 +14,7 @@ The first thing in the document must be the following YAML front-matter/metadata
 log: {Architecture Decision Log Name. Most likely car name}
 index: 0
 title: {short title, representative of solved problem and found solution}
-status: {proposed | rejected | accepted | deprecated | … | superseded by [ADR-0123](ADR-0123)}
+status: { drafted | proposed | rejected | accepted | deprecated | ... | superseded by [ADR-0123](ADR-0123)}
 date: {YYYY-MM-DD when the decision was last updated}
 decision_makers: {list everyone with final say in the decision e.g.[Person1, Person2, ...]}
 consulted: {list everyone whose opinions are sought (typically subject-matter experts); and with whom there is a two-way communication}
@@ -29,26 +29,26 @@ tags: {tags for subsystems, components, events, regulations, etc. e.g. [vehicle_
 
 ## Decision Drivers
 
-* {decision driver 1, e.g., a force, facing concern, …}
-* {decision driver 2, e.g., a force, facing concern, …}
-* … <!-- numbers of drivers can vary -->
+* {decision driver 1, e.g., a force, facing concern, ...}
+* {decision driver 2, e.g., a force, facing concern, ...}
+* ... <!-- numbers of drivers can vary -->
 
 ## Considered Options
 
 * {title of option 1}
 * {title of option 2}
 * {title of option 3}
-* … <!-- numbers of options can vary -->
+* ... <!-- numbers of options can vary -->
 
 ## Decision Outcome
 
-Chosen option: "{title of option 1}", because {justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+Chosen option: "{title of option 1}", because {justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | ... | comes out best (see below)}.
 
 ### Consequences
 
-* Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
-* Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-* … <!-- numbers of consequences can vary -->
+* Good, because {positive consequence, e.g., improvement of one or more desired qualities, ...}
+* Bad, because {negative consequence, e.g., compromising one or more desired qualities, ...}
+* ... <!-- numbers of consequences can vary -->
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Confirmation
@@ -59,23 +59,23 @@ Chosen option: "{title of option 1}", because {justification. e.g., only option,
 
 ### {title of option 1}
 
-{example | description | pointer to more information | …}
+{example | description | pointer to more information | ...}
 
 * Good, because {argument a}
 * Good, because {argument b}
 * Neutral, because {argument c}
 * Bad, because {argument d}
-* … <!-- numbers of pros and cons can vary -->
+* ... <!-- numbers of pros and cons can vary -->
 
 ### {title of other option}
 
-{example | description | pointer to more information | …}
+{example | description | pointer to more information | ...}
 
 * Good, because {argument a}
 * Good, because {argument b}
 * Neutral, because {argument c}
 * Bad, because {argument d}
-* …
+* ...
 
 <!-- This is an optional element. Feel free to remove. -->
 ## More Information
