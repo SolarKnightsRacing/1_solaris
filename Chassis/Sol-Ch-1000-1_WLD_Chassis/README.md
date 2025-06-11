@@ -9,6 +9,9 @@ Current revision: v10.0.0
 
 ## Revision v5.0.0
 
+![Isometric View](./media/Sol-Ch-1000-1-v5.0.0-media-1.png)
+![Multi View](./media/Sol-Ch-1000-1-v5.0.0-media-2.png)
+
 ### Changes
 - Lowered front of chassis down to 16in
 - Overall height down to 46in
