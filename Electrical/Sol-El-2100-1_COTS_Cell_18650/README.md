@@ -16,6 +16,8 @@ Current revision: v2.0.1
 |  length (mm)
 diameter (mm)
 ```
+## Revision 3.0.0
+Renamed features
 
 ## Revision 2.0.1
 Fixed dimensions
