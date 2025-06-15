@@ -1,4 +1,4 @@
-# CLAD Part
+# Current Sensor COTS
 
 ```
 Part number:      Sol-El-2000-5

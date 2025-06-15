@@ -1,4 +1,4 @@
-# CLAD Part
+# Fuse COTS
 
 ```
 Part number:      Sol-El-2010-0
