@@ -1,7 +1,7 @@
 # CLAD Part
 
 ```
-Part number:      Sol-El-2000-4
+Part number:      Sol-El-2010-0
 Manufacturer PN:  Not stated
 Description:      COTS
 Current revision: v2.0.0
