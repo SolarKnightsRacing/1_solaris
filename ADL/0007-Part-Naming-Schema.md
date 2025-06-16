@@ -12,7 +12,7 @@ tags: []
 
 ## Context and Problem Statement
 
-We must standardize part filenaming.
+We must standardize part file naming.
 
 ## Decision Drivers
 

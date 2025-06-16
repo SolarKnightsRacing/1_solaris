@@ -47,13 +47,13 @@ Part numbering will be used for all official references to parts and assemblies.
 ## More Information
 ### Sol-El-1234-5 (AAA-BB-CDEF-G)
 ```
-AAA -> Vehicle Name abbriviated --------> Solaris ------------------> Sol
-BB --> Subsystem abbriviated -----------> Electrical ---------------> El
+AAA -> Vehicle Name abbreviated --------> Solaris ------------------> Sol
+BB --> Subsystem abbreviated -----------> Electrical ---------------> El
 C ---> Top Level Assembly Identifier ---> Battery ----> 1000 level -> 1 (Arbitrary)
-D ---> Sub-Assembly Identifier ---------> pack -------> 200 level --> 2 (Arbitrary or sequencial)
-E ---> Sub-Sub-Assembly Identifier -----> string -----> String 3 ---> 3 (Arbitrary or sequencial)
-F ---> Sub-Sub-Sub-Assembly Identifier -> module -----> Module 4 ---> 4 (Arbitrary or sequencial)
-G ---> Part Identifier -----------------> cell -------> Cell 5 -----> 5 (Arbitrary or sequencial)
+D ---> Sub-Assembly Identifier ---------> pack -------> 200 level --> 2 (Arbitrary or sequential)
+E ---> Sub-Sub-Assembly Identifier -----> string -----> String 3 ---> 3 (Arbitrary or sequential)
+F ---> Sub-Sub-Sub-Assembly Identifier -> module -----> Module 4 ---> 4 (Arbitrary or sequential)
+G ---> Part Identifier -----------------> cell -------> Cell 5 -----> 5 (Arbitrary or sequential)
 ```
 
 #### AAA -> Vehicle Name abbreviated

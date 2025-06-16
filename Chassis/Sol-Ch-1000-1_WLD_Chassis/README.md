@@ -57,7 +57,7 @@ Current revision: v10.0.0
 
 ### Changes
 - Moved tubes at the rear of the chassis to create space for the trailing arm suspension, roughly 6 inches of space available now for it
-- Redid some of the triangulation for the roll hoop to reduce stress concentration
+- Re-did some of the triangulation for the roll hoop to reduce stress concentration
 
 
 ## Revision v2.0.0
@@ -130,7 +130,7 @@ Center of mass: ( millimeters )
 - Analyze effectiveness, position, and quantity of bracing members + Whatever information simulation gives
 
 ### From Connor
-- I think the front section should be narrowed like said above, but additionally the entire bottom of the car can be shrunk so the entire chassis looks like an upside-down trapezoid. Saves weight and is better aerodynamically. Also, I think for rigidity in egress directions, I think a small metal support triangle on either side by the drivers cockpit could be implemented so drivers can take a small step before jumping out.
+- I think the front section should be narrowed like said above, but additionally the entire bottom of the car can be shrunk so the entire chassis looks like an upside-down trapezoid. Saves weight and is better aero-dynamically. Also, I think for rigidity in egress directions, I think a small metal support triangle on either side by the drivers cockpit could be implemented so drivers can take a small step before jumping out.
 - Perhaps we could use a lighter steel? Is there anything lighter with similar strength properties? I suppose cheaper is also important too.
 - The driver cockpit doesn’t need to be too big since the legs and such will be under the “hood” of the car. I believe we can greatly reduce the overall area that the cockpit takes up to minimize weight.
 

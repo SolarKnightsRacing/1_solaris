@@ -6,7 +6,7 @@ The first record should be the vehicle name.
 ## ADR Template
 The following is a template for an ADR with a name ####-Title.md e.g. 0000-ADR-Template.md
 The first four digits should be a chronological index of the ADRs.
-The document must include the .md extention.
+The document must include the .md extension.
 The first thing in the document must be the following YAML front-matter/metadata.
 
 ```YAML
