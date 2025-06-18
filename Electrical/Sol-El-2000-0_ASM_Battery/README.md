@@ -4,8 +4,11 @@
 Part number:      Sol-El-2000-0
 Manufacturer PN:  Not Applicable
 Description:      ASM_Battery
-Current revision: v2.0.1
+Current revision: v3.0.0
 ```
+# Revision v3.0.0
+Redesign with new parts in progress
+
 # Revision v2.0.1
 Updated to Sol-El-2100-0-v3.0.0
 
