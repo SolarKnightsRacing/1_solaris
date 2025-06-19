@@ -3,13 +3,28 @@
 This folder holds all of the Architecture Decision Records (ADRs) for the vehicle.
 The first record should be the vehicle name.
 
+## How to Create an ADR
+1. Create a file called {NUM + 1}.md
+2. This file should have the following contents
+```
+ADR{NUM + 1} has not been accepted yet, check [pull request #{Current PR Index + 1}](https://github.com/SolarKnightsRacing/1_solaris/pull/{Current PR Index + 1}) for its progress.
+```
+> [!CAUTION]
+> The ADR index (NUM + 1) and the Pull Request Index (Current PR Index + 1) most likely won't be the same.
+
+3. Create a new branch called ADR{NUM + 1}
+4. Replace the contents of {NUM + 1}.md with the ADR Template
+5. Commit and push those changes to the new branch
+6. Create a new pull request
+7. Once there is a tentative outcome for the ADR, Rename the ADR to ADR{NUM + 1}-{Chosen-Option-Seperated-By-Dashes}.md
+7. Once the ADR has been written, revised, reviewed, and accepted, squash the changes to the main branch.
+
 ## ADR Template
 The following is a template for an ADR with a name ####-Title.md e.g. 0000-ADR-Template.md
 The first four digits should be a chronological index of the ADRs.
 The document must include the .md extension.
-The first thing in the document must be the following YAML front-matter/metadata.
 
-```YAML
+```Markdown
 ---
 log: {Architecture Decision Log Name. Most likely car name}
 index: 0
@@ -21,7 +36,6 @@ consulted: {list everyone whose opinions are sought (typically subject-matter ex
 informed: {list everyone who is kept up-to-date on progress; and with whom there is a one-way communication}
 tags: {tags for subsystems, components, events, regulations, etc. e.g. [vehicle_dynamics, Electrical, REG 8.1.A.1]}
 ---
-```
 
 ## Context and Problem Statement
 
@@ -81,3 +95,4 @@ Chosen option: "{title of option 1}", because {justification. e.g., only option,
 ## More Information
 
 {You might want to provide additional evidence/confidence for the decision outcome here and/or document the team agreement on the decision and/or define when/how this decision the decision should be realized and if/when it should be re-visited. Links to other decisions and resources might appear here as well.}
+```
