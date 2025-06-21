@@ -26,6 +26,7 @@ We must decide on a diagramming tool for electrical systems.
   * D2 lang
   * Mermaid
   * PlantUML
+  * AutoCAD Electrical
   
 ## Decision Outcome
 
@@ -93,3 +94,15 @@ Chosen option: D2 lang
 
   * Bad, because it is ugly.
   * Bad, because it is not good for systems diagramming.
+
+  ###AutoCAD Electrical 
+
+  {example | description | pointer to more information | ...}
+  
+  *Good, because we'll be using the same system for the wire harness design. 
+  *Good, because it was designed for efficiently designing electrical systems. 
+  *Nuetral, it is industry standard. 
+  *Bad, no native github integration. 
+
+ ![AUTOCADELECTRICAL](https://github.com/user-attachments/assets/a052fa3f-4fa1-4732-8ae4-d75bbbac9b01)
+
