@@ -23,6 +23,7 @@ We must decide on a diagramming tool for electrical systems.
 
 * Rapid Harness
 * WireViz
+* AutoCad Electrical
 
 ## Decision Outcome
 
@@ -55,3 +56,12 @@ Chosen option: WireViz
 * Good, because it is flexable.
 * Good, because it automatically generates a BOM.
 * Bad, because somewhat difficult to learn.
+
+  ### Autocad Electrical System
+
+  {example | description | pointer to more information | ...}
+
+  *Good, because plenty of free resources to learn it.
+  *Good, provides version control through Autodesk's environment.
+  * Nuetral, Industry standard for developing any electrnic schema or wiring diagram.
+  * Bad, Is not text-based. 
